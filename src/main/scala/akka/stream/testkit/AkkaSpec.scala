@@ -1,4 +1,4 @@
-package akka.streams.testkit
+package akka.stream.testkit
 
 import akka.testkit.TestKit
 import akka.event.LoggingAdapter

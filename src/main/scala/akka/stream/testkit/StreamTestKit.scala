@@ -1,4 +1,8 @@
-package akka.streams.testkit
+/**
+ * Copyright (C) 2014 Typesafe Inc. <http://www.typesafe.com>
+ */
+package akka.stream.testkit
+
 import scala.language.existentials
 import akka.actor.ActorSystem
 import akka.stream.impl.{ EmptyPublisher, ErrorPublisher }
@@ -6,6 +10,7 @@ import akka.testkit.TestProbe
 import org.reactivestreams.{ Publisher, Subscriber, Subscription }
 import scala.concurrent.duration.FiniteDuration
 import akka.actor.DeadLetterSuppression
+import scala.util.control.NoStackTrace
 
 object StreamTestKit {
 
@@ -172,4 +177,6 @@ object StreamTestKit {
 
     def getPublisher: Publisher[I] = this
   }
+
+  case class TE(message: String) extends RuntimeException(message) with NoStackTrace
 }

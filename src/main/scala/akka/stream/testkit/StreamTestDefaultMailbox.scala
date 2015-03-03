@@ -1,14 +1,14 @@
-package akka.streams.testkit
+package akka.stream.testkit
 
 import akka.dispatch.ProducesMessageQueue
 import akka.dispatch.UnboundedMailbox
 import akka.dispatch.MessageQueue
+import akka.stream.impl.io.StreamTcpManager
 import com.typesafe.config.Config
 import akka.actor.ActorSystem
 import akka.dispatch.MailboxType
 import akka.actor.ActorRef
 import akka.actor.ActorRefWithCell
-import akka.stream.impl.io.StreamTcpManager
 import akka.actor.Actor
 import akka.stream.impl.io.TcpListenStreamActor
 

@@ -1,4 +1,7 @@
-package akka.streams.testkit
+/**
+ * Copyright (C) 2014 Typesafe Inc. <http://www.typesafe.com>
+ */
+package akka.stream.testkit
 
 import scala.collection.immutable
 import java.nio.channels.DatagramChannel

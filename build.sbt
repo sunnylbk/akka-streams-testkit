@@ -1,14 +1,14 @@
 name := "akka-streams-testkit"
 
-organization := "iht"
+organization := "com.ihealthtechnologies"
 
-version := "1.0.0-SNAPSHOT"
+version := "2.0.0-SNAPSHOT"
 
 scalaVersion := "2.11.5"
 
 libraryDependencies ++= Seq(
   "org.scala-lang" % "scala-library" % scalaVersion.value % "compile",
-  "com.typesafe.akka" %% "akka-stream-experimental" % "1.0-M3" % "compile",
+  "com.typesafe.akka" %% "akka-stream-experimental" % "1.0-M4" % "compile",
   "com.typesafe.akka" %% "akka-testkit" % "2.3.9" % "compile",
   "org.scalatest" %% "scalatest" % "2.2.3" % "compile"
 )
